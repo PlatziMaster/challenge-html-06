@@ -1,6 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@400;700&display=swap');
+
+
+:root {
+    --color-bg: #969696;
+    --color-font: #1f1f1f;
+    --color-border:#808080;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Blinker', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 280px;
+    height: 500px;
+    background-image: linear-gradient(to top, #959595, #949494, #939393, #929292, #919191);
+    border-radius: 8%;
+    border: 1px solid var(--color-border);
+    box-shadow: inset 3px 0 5px #484848, inset -10px -4px 9px #2a2a2a;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+    height: 50px;
+}
+
+.camera {
+    width: 35px;
+    height: 35px;
+    background: black;
+    border-radius: 50%;
+}
+
+.led-container {
+    border: 1px solid red;
+    width: 300px;
+    height: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.leds-section {
+    border: 1px solid red;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.footer-text {
+    position: absolute;
+
+}
+
+.finger-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.finger-print {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #0c0c0c 0%, #bababa 100%) 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.finger-container .logo h1 {
+    font-weight: 600;
+    color: var(--color-font);
+}
