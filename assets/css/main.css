@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.trasero {
+  width: 276px;
+  height: 560px;
+  background-color: #fedec5;
+  border: 1px solid #caaf9a;
+  position: absolute;
+  top: 50px;
+  border-radius: 30px;
+}
+
+.trasero-borde {
+  width: 264px;
+  height: 550px;
+  background-color: #fedec5;
+  /* border: 1px solid black; */
+  border-radius: 25px;
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  box-shadow: 1px 0px 19px -2px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.camara {
+  width: 100px;
+  height: 110px;
+  background-color: #fedec5;
+  box-shadow: 1px 0px 19px -2px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  border-radius: 30px;
+}
+
+.lente-uno {
+  width: 45px;
+  height: 45px;
+  border: 5px solid #caaf9a;
+  background-color: #0b0e0e;
+  border-radius: 100%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  box-sizing: border-box;
+}
+
+.lente-dos {
+  width: 45px;
+  height: 45px;
+  border: 5px solid #caaf9a;
+  background-color: #0b0e0e;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  box-sizing: border-box;
+}
+
+.lente-tres {
+  width: 45px;
+  height: 45px;
+  border: 5px solid #caaf9a;
+  background-color: #0b0e0e;
+  border-radius: 100%;
+  position: absolute;
+  top: 32px;
+  right: 5px;
+  box-sizing: border-box;
+}
+
+.flash {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ffffff;
+  background-color: #caaf9a;
+  border-radius: 100%;
+  position: absolute;
+  top: 8px;
+  right: 18px;
+  box-sizing: border-box;
+}
+
+.punto {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ffffff;
+  background-color: #caaf9a;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 18px;
+  right: 22px;
+  box-sizing: border-box;
+}
+
+.apple .fab {
+  font-size: 80px;
+  color: #caaf9a;
+}
+
+/*# sourceMappingURL=main.css.map */
