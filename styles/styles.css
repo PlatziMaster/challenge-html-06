@@ -23,48 +23,56 @@ body {
     justify-content: center;
 }
 
-.container {
-    width: 280px;
+.main-container .container {
+    width: 255px;
     height: 500px;
+    margin-top: 80px;
     background-image: linear-gradient(to top, #959595, #949494, #939393, #929292, #919191);
     border-radius: 8%;
     border: 1px solid var(--color-border);
     box-shadow: inset 3px 0 5px #484848, inset -10px -4px 9px #2a2a2a;
 }
 
-.header-top {
-    display: flex;
-    align-items: center;
-    border: 1px solid red;
-    height: 50px;
+.main-container .container .header-top {
+    height: 30px;
+    padding-left: 20px;
+    border-bottom: 5px solid black;
 }
 
-.camera {
+.main-container .container .header-top .text-camera {
+    font-size: 9px;
+}
+
+.header-top .text-camera span {
+    position: relative;
+    top: 15px;
+    left: 35px;
+}
+
+.main-container .container .header-top .camera {
+    position: absolute;
+    top: 93px;
     width: 35px;
     height: 35px;
     background: black;
     border-radius: 50%;
 }
 
-.led-container {
-    border: 1px solid red;
-    width: 300px;
-    height: 200px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+
+.main-container .container .led-container {
+    width: 275px;
+    height: 50px;
+    padding-left: 15px;
 }
 
-.leds-section {
-    border: 1px solid red;
+.main-container .container .led-container .leds-section {
+    position: relative;
+    top: 23px;
+    left: 10px;
     width: 25px;
     height: 25px;
     border-radius: 50%;
-}
-
-.footer-text {
-    position: absolute;
-
+    border: 1px solid black;
 }
 
 .finger-container {
@@ -74,15 +82,29 @@ body {
 }
 
 .finger-print {
-    border: 2px solid transparent;
-    border-image: linear-gradient(to right, #0c0c0c 0%, #bababa 100%) 1;
+    border: 1px solid black;
+    /* border-image: linear-gradient(to right, #0c0c0c 0%, #bababa 100%) 1; */
+    background-color: grey;
+    border-radius: 50%;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
     margin: 20px 0;
 }
 
 .finger-container .logo h1 {
     font-weight: 600;
     color: var(--color-font);
+}
+
+.container .bottom-text {
+    position: relative;
+    top: 240px;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 5px solid black;
+    border-radius:4px;
+}
+
+.container .bottom-text span {
+    font-size: 9px;
 }
