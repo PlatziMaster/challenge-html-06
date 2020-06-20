@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: #FFF9F9;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.container__primary{
+    background-color: white;
+    width: 300px;
+    height: 560px;
+    border-radius: 40px;
+}
+
+.backend{
+    width: 300px;
+    height: inherit;
+    border-radius: 40px;
+    position: relative;
+    border-top: 7px groove #d1d1d1;
+    border-left: 7px groove #d1d1d1;
+    border-right: 6px groove #f3f1f1;
+    border-bottom: 6px groove #dfd8d8;
+    border-bottom: 5px solid #dfd8d8;
+    box-shadow: 1px 2px 10px black;
+}
+
+.backend__center{
+    width: 300px;
+    height: inherit;
+    border-radius: 40px;
+    border-left: 3px groove #d1d1d1;
+    border-right: 5px groove #e0dfdf;
+    background: linear-gradient(46deg, rgba(219,218,227,1) 0%, rgba(219,218,227,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.container__lenses{
+    width: 100px;
+    height: 110px;
+    position: absolute;
+    top: .8em;
+    left: .8em;
+    border-radius: 30px;
+    border: 3px groove #ffffff;
+    box-shadow: 0px 0px 10px #ffffff;
+    background-color: rgba(219,218,227,1);
+}
+
+.lenses__one, .lenses__two{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px groove #ffffff;
+    background:radial-gradient(ellipse at center, rgba(16,30,56,1) 0%, rgba(16,30,56,1) 42%, rgba(0,0,0,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lenses__one{
+    top: .2em;
+    left: .3em;
+}
+
+.lenses__brightness--one, .lenses__brightness--two{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background:radial-gradient(ellipse at center, rgba(4,15,71,1) 0%, rgba(4,15,71,1) 21%, rgba(99,99,99,1) 100%);
+}
+
+.lenses__two{
+    top: 3.4em;
+    left: .3em;
+}
+
+.lenses__three{
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    border: 1px groove #f9ffa4;
+    box-shadow: 1px 1px 4px #7e7c7c;
+    background: #ece3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lenses__four{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    border-radius: 50%;
+    border: 1px groove #ffffff;
+    box-shadow: 0px 1px 10px #ffffff;
+    background: #ece3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lenses__brightness--four{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background:radial-gradient(ellipse at center, rgb(247, 250, 228) 0%, rgb(251, 253, 219) 21%, rgb(245, 245, 245) 100%);
+}
+
+
+
+.logo{
+    position: absolute;
+    top: 270px;
+    left: 130px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(53deg, rgba(125,125,125,1) 0%, rgba(125,125,125,1) 41%, rgba(180,180,180,1) 66%, rgba(255,255,255,1) 100%);
+    width: 50px;
+    height: 48px;
+    border-radius: 35% 35% 41% 41% / 42% 42% 75% 75%;
+}
+
+.logo::before{
+    content: "";
+    background: rgb(161, 158, 158);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin: -15px 0 0 25px;
+    border-radius: 50px 0;
+    z-index: 5;
+}
+
+.logo::after{
+    content: "";
+    background: #dfdee6;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 4px 0 0 38px;
+    border-radius: 50%;
+    z-index: 4;
+    box-shadow: -27px -30.5px 0 #dfdee6,
+        -24px 41px 0 #dfdee6;
+}
+
+.boton__one, .boton__tow, .boton__three{
+    width: 4px;
+    left: 306px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #d1d1d1;
+    position: absolute;
+    border-bottom: 1px groove #ffffff;
+}
+
+.boton__one{
+    height: 30px;
+    bottom: 445px;
+}
+
+.boton__tow{
+    height: 43px;
+    bottom: 380px;
+}
+
+.boton__three{
+    height: 43px;
+    bottom: 320px;
+}
+
+.boton__four{
+    width: 4px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #d1d1d1;
+    position: absolute;
+    border-bottom: 1px groove #ffffff;
+    left: -10px;
+    height: 73px;
+    bottom: 360px;
+}
+
+
