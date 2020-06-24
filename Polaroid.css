@@ -1,0 +1,138 @@
+a {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  text-decoration: none;
+  left: 42%;
+  top: 5em;
+}
+
+.Container {
+  width: 281px;
+  height: 176px;
+  background-color: #3B99AF;
+  border-radius: 25px;
+  position: relative;
+  top: 200px;
+  margin: 9em auto;
+  box-shadow: -10px -10px 13px -8px rgba(0,0,0,0.75);
+}
+
+.Rectangle {
+  width: 78px;
+  height: 30px;
+  background-color: #191919;
+  position: absolute;
+  border-radius:10px 10px 5px 5px;
+  border-top: 3px solid #595960;
+  left: 105px;
+  top:  -33px;
+  z-index: 3;
+}
+
+.Mini-rectangle {
+  width: 38px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  position: inherit;
+  left: 18px;
+  top: 5px;
+}
+
+.Bubble {
+  width: 10px;
+  height: 10px;
+  background-color: #cfd0d2;
+  border-radius: 100%;
+  position: absolute;
+  right: 7px;
+  top: 10px;
+}
+
+.Rect {
+  width: 34px;
+  height: 18px;
+  background-color: #6A6A6A;
+  background: linear-gradient(45deg, rgba(128,128,128,1) 0%, rgba(128,128,128,1) 27%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 77%, rgba(128,128,128,1) 100%);
+  border-radius: 3px;
+  position: absolute;
+  top: 2px;
+  left: 1px;
+}
+
+
+span {
+  color: #195D80;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  margin: 0 auto;
+}
+
+
+.Big-circle {
+  width: 104px;
+  height: 104px;
+  border-radius: 100%;
+  background-color: #191919;
+  border: 2px solid black;
+  position: inherit;
+  top: 25px;
+  left: 91px;
+}
+
+.Medium-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 100%;
+  background-color: #191919;
+  border: 2px solid black; 
+  position: inherit;
+  top: 16px;
+  left: 16px;
+}
+
+.Little-circle {
+  width: 29px;
+  height: 29px;
+  border-radius: 100%;
+  background:  linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 27%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 77%, rgba(0,0,0,1) 100%);
+  position: inherit;
+  top: 21px;
+  left: 21px;
+}
+
+.Rainbow {
+  width: 82px;
+  height: 20px;
+  background: linear-gradient(0deg, rgba(59,153,175,1) 12%, rgba(255,255,0,1) 50%, rgba(215,89,132,1) 86%, rgba(215,89,132,1) 100%, rgba(215,89,132,1) 100%); 
+  position: relative;
+  top: -35px;
+  left: 199px;
+}
+
+label {
+  color: #195D80;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  position: inherit;
+  bottom: 100px;
+  left: 210px;
+}
+
+label:nth-child(6) {
+  color: #6AD3DF;
+}
+
+img {
+  width: 154px;
+  height: 114px;
+  position: relative;
+  top: -110px;
+  left: 180px;
+  z-index: -1;
+}
