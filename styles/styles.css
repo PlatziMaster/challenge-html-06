@@ -1,5 +1,5 @@
 
-/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;700&display=swap');
 
 
 :root {
@@ -24,7 +24,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    /* font-family: 'Baloo Paaji 2', cursive; */
+    font-family: 'Baloo Paaji 2', cursive;
     width: 100%;
     height: 100%;
 }
@@ -209,7 +209,7 @@ body {
 
 .container .bottom-text {
     position: relative;
-    top: 115px;
+    top: 90px;
     text-align: center;
     border-bottom: 5px solid var(--color-lines);
     margin-top: 25px;                                       /*---------------adicion*/
@@ -220,14 +220,13 @@ body {
 }
 
 .atrib {
-    position: relative;
-    z-index: 3;
+    position: absolute;
+    bottom: 20px;
     height: 50px;
 }
 
 .atrib .attribution {
     text-align: center;
-    margin: 20px;
     font-size: 11px;
 }
 
@@ -347,7 +346,7 @@ body {
     left: 5px;
     width: 94%;
     height: 80%;
-    background-color: rgb(54, 52, 52);
+    background-color:rgb(36, 35, 35);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -379,6 +378,25 @@ body {
 /* //////////////////////////////////////////////////////----MEDIA-QUERIES-----////////////// */
 
 
+@media screen and (max-width: 414px) {
+
+    body {
+        position: static;
+    }
+
+    .main-container {
+        grid-template: 50% 50% / 100%;
+        grid-gap: 250px;
+        padding-top: 120px;
+        background-image: none;
+    }
+
+    .main-container .front-main {
+        padding-bottom: 40px;
+    }
+
+}
+
 @media screen and (max-width: 375px) {
 
     body {
@@ -387,9 +405,32 @@ body {
 
     .main-container {
         grid-template: 50% 50% / 100%;
-        grid-gap: 50px;
-        padding-top: 30px;
+        grid-gap: 200px;
+        padding-top: 90px;
+        background-image: none;
     }
 
+    .main-container .front-main {
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    body {
+        position: static;
+    }
+
+    .main-container {
+        grid-template: 50% 50% / 100%;
+        grid-gap: 260px;
+        padding-top: 120px;
+        background-image: none;
+
+    }
+
+    .main-container .front-main {
+        padding-bottom: 40px;
+    }
 }
 
