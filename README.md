@@ -2,7 +2,7 @@
 
 Positions in CSS
 
-![](https://repository-images.githubusercontent.com/272842940/c193a280-b5a9-11ea-96a9-356a0cb23f75)
+![](https://repository-images.githubusercontent.com/272842940/ba69b300-b6d5-11ea-9362-6e1855cb1a36)
 
 ## 🖍 ¿En qué consiste?
 
