@@ -18,8 +18,7 @@
 }
 
 body {
-    position: absolute;
-    /*
+    /* position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -256,6 +255,7 @@ body {
     align-items: center;
 }
 
+
 .main-container .front-main .front-container .header-front {
     position: absolute;
     width: 97%;
@@ -268,32 +268,91 @@ body {
     border: none;
 }
 
+.main-container .front-main .front-container .header-front .header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.main-container .front-main .front-container .header-front .header-top .cam-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-container .front-main .front-container .header-front .header-top .cam-section .speaker {
+    position: relative;
+    bottom: 20px;
+    z-index: 3;
+    width: 125px;
+    height: 10px;
+    background-color: var(--color-cam-internal);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-container .front-main .front-container .header-front .header-top .cam-section .speaker .speaker-holes {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: black;
+}
+
 .main-container .front-main .front-container .header-front .camera {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    top: 15px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
-    border: 1px solid var(--color-lines);
     background-image: linear-gradient(to left top, #000000, #212121, #303031, #404042, #515153);
 }
 
-/* .front-main .front-container.header-front .camera .internal-mark {
+.front-main .front-container .header-front .camera .internal-mark {
     position: relative;
-    top: 7px;
-    left: 7px;
-    width: 20px;
-    height: 20px;
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-image: linear-gradient(to left top, #222221, #312f2e, #403d3d, #4e4b4d, #5b5b5e);
 }
 
-.front-main .front-container.header-front .camera .internal-mark .internal-len {
+.front-main .front-container .header-front .camera .internal-mark .internal-len {
     position: relative;
-    top: 5px;
-    left: 5px;
-    width: 10px;
-    height: 10px;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
     background-color: black;
     border-radius: 50%;
     border: 2px solid var(--color-cam-internal);
-} */
+}
+
+.front-main .front-container .header-front .leds-container {
+    position: relative;
+    bottom: 12px;
+    left: 60px;
+}
+
+.front-main .front-container .header-front .leds-container .leds-front .led {
+    width: 10px;
+    height: 10px;
+    background-image: linear-gradient(to left top, #565b2e, #777d49, #99a167, #bdc685, #e2eda5);
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+
+.main-container .front-main .front-container .screen-front {
+    position: relative;
+    z-index: 1;
+    top: 5px;
+    right: 0px;
+    width: 94%;
+    height: 80%;
+    background-color: rgb(54, 52, 52);
+}
