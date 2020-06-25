@@ -1,0 +1,436 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;700&display=swap');
+
+
+:root {
+    --color-bg: #969696;
+    --color-font: #1f1f1f;
+    --color-border:#808080;
+    --color-lines:#3A3A3A;
+    --color-cam-internal: #2E2E2E;
+    --color-led-lines: #dfe6bd;
+    --color-bt-lateral:#757373;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Baloo Paaji 2', cursive;
+    width: 100%;
+    height: 100%;
+}
+
+.main-container {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: 100% / 50% 50%;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 40px;
+    background-image: linear-gradient(to left top, #999999, #a7a7a7, #b6b5b5, #c5c3c3, #d4d2d1);
+}
+
+.main-container .container {
+    position: relative;
+    width: 255px;
+    height: 500px;
+    background-image: linear-gradient(to right bottom, #959595, #888889, #7c7c7c, #716f70, #656363);
+    border-radius: 25px;
+    box-shadow: inset 3px 0 5px #484848, inset -10px -4px 9px #2a2a2a;
+}
+
+.main-container .container .header-top {
+    height: 30px;
+    padding-left: 20px;
+    border-bottom: 5px solid var(--color-lines);
+}
+
+.main-container .container .header-top .text-camera {
+    font-size: 9px;
+}
+
+.header-top .text-camera span {
+    position: relative;
+    top: 13px;
+    left: 35px;
+}
+
+.main-container .container .header-top .camera {
+    position: absolute;
+    top: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid var(--color-lines);
+    background-image: linear-gradient(to left top, #000000, #212121, #303031, #404042, #515153);
+}
+
+.main-container .container .header-top .camera .internal-mark {
+    position: relative;
+    top: 7px;
+    left: 7px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left top, #222221, #312f2e, #403d3d, #4e4b4d, #5b5b5e);
+}
+
+.main-container .container .header-top .camera .internal-mark .internal-len {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid var(--color-cam-internal);
+
+}
+
+.main-container .container .led-container {
+    position: relative;
+    top: 23px;
+    left: 25px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left top, #c2c2c3, #cfcfd2, #dcdce0, #e9e9ef, #f7f6fe);
+    border: 1px solid var(--color-border);
+}
+
+.main-container .container .led-container .leds-section1 {
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left top, #565b2e, #777d49, #99a167, #bdc685, #e2eda5);
+}
+
+.main-container .container .led-container .leds-section2 {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left top, #565b2e, #777d49, #99a167, #bdc685, #e2eda5);
+}
+
+.main-container .container .led-container .leds-section3 {
+    position: absolute;
+    top: 15px;
+    left: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left top, #565b2e, #777d49, #99a167, #bdc685, #e2eda5);
+}
+
+.main-container .container .led-container .leds-section4 {
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left top, #565b2e, #777d49, #99a167, #bdc685, #e2eda5);
+}
+
+.main-container .container .led-container .internal-circle-led {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid #121310;
+    background-image: linear-gradient(to left top, #121310, #232523, #353837, #494c4c, #5e6061);
+}
+
+.container .finger-container {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.container .finger-container .finger-print {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin: 20px 0;
+    background-color: #616162;
+    border: 1px solid #494949;
+}
+
+.finger-container .logo h1 {
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--color-lines);
+}
+
+.main-container .container .back-firts-btn {
+    position: relative;
+    z-index: -1;
+    bottom: 82px;
+    right: 3px;
+    width: 5px;
+    height: 60px;
+    background-color: var(--color-border);
+    border-radius: 5px;
+}
+
+.main-container .container .back-second-btn {
+    position: relative;
+    z-index: -1;
+    bottom: 64px;
+    right: 3px;
+    width: 5px;
+    height: 30px;
+    background-color: var(--color-border);
+    border-radius: 5px;
+}
+
+.container .bottom-text {
+    position: relative;
+    top: 90px;
+    text-align: center;
+    border-bottom: 5px solid var(--color-lines);
+    margin-top: 25px;                                       /*---------------adicion*/
+}
+
+.container .bottom-text span {
+    font-size: 9px;
+}
+
+.atrib {
+    position: absolute;
+    bottom: 20px;
+    height: 50px;
+}
+
+.atrib .attribution {
+    text-align: center;
+    font-size: 11px;
+}
+
+/* <!-- //////////////////////////////////////////---------------- FRONT PANEL----///////////////// --> */
+
+.main-container .front-main {
+    position: relative;
+}
+
+.main-container .front-main .front-container {
+    position: relative;
+    width: 255px;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: inset 3px 0 5px #484848, inset -10px -4px 9px #2a2a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-container .front-main .front-container .header-front {
+    position: absolute;
+    z-index: 1;
+    width: 97%;
+    height: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: black;
+    border-radius: 25px;
+    border: none;
+}
+
+.main-container .front-main .front-container .header-front .header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.main-container .front-main .front-container .header-front .header-top .cam-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-container .front-main .front-container .header-front .header-top .cam-section .speaker {
+    position: relative;
+    bottom: 20px;
+    z-index: 3;
+    width: 125px;
+    height: 10px;
+    background-color: var(--color-cam-internal);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-container .front-main .front-container .header-front .header-top .cam-section .speaker .speaker-holes {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.main-container .front-main .front-container .header-front .camera {
+    position: absolute;
+    top: 15px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left top, #000000, #212121, #303031, #404042, #515153);
+}
+
+.front-main .front-container .header-front .camera .internal-mark {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left top, #222221, #312f2e, #403d3d, #4e4b4d, #5b5b5e);
+}
+
+.front-main .front-container .header-front .camera .internal-mark .internal-len {
+    position: relative;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid var(--color-cam-internal);
+}
+
+.front-main .front-container .header-front .leds-container {
+    position: relative;
+    bottom: 12px;
+    left: 60px;
+}
+
+.front-main .front-container .header-front .leds-container .leds-front .led {
+    width: 9px;
+    height: 9px;
+    background-image: linear-gradient(to left top, #565b2e, #777d49, #99a167, #bdc685, #e2eda5);
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+
+.main-container .front-main .front-container .screen-front {
+    position: relative;
+    z-index: 2;
+    left: 5px;
+    width: 94%;
+    height: 80%;
+    background-color:rgb(36, 35, 35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main-container .front-main .front-container .front-firts-btn {
+    position: relative;
+    z-index: -1;
+    bottom: 82px;
+    left: 11px;
+    width: 5px;
+    height: 60px;
+    background-color: var(--color-bt-lateral);
+    border-radius: 5px;
+}
+
+.main-container .front-main .front-container .front-second-btn {
+    position: relative;
+    z-index: -1;
+    bottom: 20px;
+    left: 6px;
+    width: 5px;
+    height: 30px;
+    background-color: var(--color-bt-lateral);
+    border-radius: 5px;
+}
+
+/* //////////////////////////////////////////////////////----MEDIA-QUERIES-----////////////// */
+
+
+@media screen and (max-width: 414px) {
+
+    body {
+        position: static;
+    }
+
+    .main-container {
+        grid-template: 50% 50% / 100%;
+        grid-gap: 250px;
+        padding-top: 120px;
+        background-image: none;
+    }
+
+    .main-container .front-main {
+        padding-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    body {
+        position: static;
+    }
+
+    .main-container {
+        grid-template: 50% 50% / 100%;
+        grid-gap: 200px;
+        padding-top: 90px;
+        background-image: none;
+    }
+
+    .main-container .front-main {
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    body {
+        position: static;
+    }
+
+    .main-container {
+        grid-template: 50% 50% / 100%;
+        grid-gap: 260px;
+        padding-top: 120px;
+        background-image: none;
+
+    }
+
+    .main-container .front-main {
+        padding-bottom: 40px;
+    }
+}
+
