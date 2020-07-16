@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    background: #df7000;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    width: 550px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 200px;
+    margin-right: 200px;
+}
+.item1{
+  background: #253a46;
+  width: 180px;
+  height: 250px;
+  position: relative;
+  left: 60%;
+  border-radius: 5px;
+ 
+  
+}
+.item2{
+    background: #95ca3e;
+    border: 1px solid white;
+    width: 350px;
+    height: 180px;
+    position: relative;
+    left: -20%;
+    top:-10%;
+    z-index: 4;
+    
+}
+.item3{
+    background-image: url('https://media.licdn.com/dms/image/C4E0BAQGB5fACNS8alQ/company-logo_200_200/0?e=2159024400&v=beta&t=Aopy5VC41CgsqOolfYzDdcvU89AQt1Dww1emT4salns');
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 180px;
+    position: relative;
+    left: -100%;
+    top: 50%;
+    transform: translate(0, -100%);
+    z-index: 4;
+}
+.item4{
+    background:#0791e6;
+    border: 1px solid #253a46;
+    width: 350px;
+    height: 450px;
+    position: relative;
+    left: -120%;
+    top: 105%;
+    transform: translate(0, -100%);
+    border-radius: 5px;
+  }
+
+.item5{
+    background: wheat;
+    border: 1px solid #253a46;
+    border-radius: 5px;
+    width: 310px;
+    height: 200px;
+    position: relative;
+    left: 55%;
+    top: -140%;
+}
+.item6{
+    background: white;
+    width: 140px;
+    height: 200px;
+    position: relative;
+    left: 10%;
+    top: -160%;
+}
+.item7{
+    background-image: url('https://static.platzi.com/media/achievements/1350-09ddb033-354b-4c0c-84a4-56cbb71d0b08.png');
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: -235%;
+    top: -50%;
+    background-repeat: no-repeat;
+}
+.item8{
+    background-image: url('https://www.emojiall.com/images/120/facebook/1f680.png');
+    height: 150px;
+    position: relative;
+    left: -100%;
+    top: -30%;
+    background-repeat: no-repeat;
+}
+.item9{
+    background-image: url('https://avatars2.githubusercontent.com/u/59710554?s=200&v=4');
+    width: 350px;
+    width: 250px;
+    height: 120px;
+    position: relative;
+    left: 200%;
+    top: -370%;
+    background-repeat: no-repeat;
+}
+
+/* ----------------------- Footer ----------------*/
+
+.footer{
+        height: 50px;
+        background:#253a46; 
+        
+}
+.item10-footer{
+    padding: 1px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: -2px;
+}
