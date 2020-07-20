@@ -1,0 +1,53 @@
+.escritorio img{
+    width: 1600px;
+    height: 1400;
+    position: absolute;
+    z-index: 0;
+}
+
+.laptop img {
+    width: 800px;
+    position: relative;
+    z-index: 1;
+}
+
+.teclado img {
+    width: 700px;
+    position: relative;
+    left: 100px;
+    z-index: 2;
+}
+
+.mousepad img {
+    width: 750px;
+    position: relative;
+    bottom: 700px;
+    left: 830px;
+    z-index: 3;
+}
+
+.mouse img {
+    width: 200px;
+    position: relative;
+    bottom: 1050px;
+    left: 1100px;
+    z-index: 4;
+
+}
+
+.bungee img {
+    width: 300px;
+    position: relative;
+    bottom: 1800px;
+    left: 1100px;
+    z-index: 5;
+}
+
+.original img {
+    width: 1000px;
+}
+
+.comparativa {
+    position: relative;
+    bottom: 1100px;
+}
