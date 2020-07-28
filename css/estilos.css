@@ -12,8 +12,8 @@ body{
     width: 200px;
     height: 400px;
     background-color: beige;
-    position: absolute;
-    left: 40%;
+    position: relative;
+    left: 3 0%;
     top: 100px;
     z-index: 2;
     border: 10px solid black;
@@ -22,9 +22,9 @@ body{
     
     width: 40px;
     height: 40px;
-    position: relative;
-    top: 205px;
-    left: 46%;
+    position: absolute;
+    top: 90px;
+    left: 75%;
     z-index: 3;
     opacity: 0.6;
 }
@@ -34,9 +34,9 @@ body{
     opacity: 1;
     border-top: 210px solid rgb(255 214 101); 
     border-right: 200px solid transparent; 
-    position: relative;
-    top: 66px;
-    left: 40.5%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     z-index: 1;
 }
 
@@ -47,21 +47,23 @@ body{
     border-radius: 20px;
     position: absolute;
     z-index: 4;
-    top: 117px;
-    left: 565px;
+    top: 10px;
+    left: 10px;
 }
 
 .cam1 img{
     width: 30px;
     height: 30px;
     border-radius: 15px;
+    position: absolute;
 
 }
 .cam2 img{
     width: 30px;
     height: 30px;
     border-radius: 15px;
-    margin-top: 12px;
+    margin-top: 50px;
+    position: absolute;
   
 }
 .camara .light{
@@ -72,7 +74,7 @@ body{
     border: 1px solid black;
     position: absolute;
     top: 31px;
-    left: 6px;
+    left: 4px;
 }
 
 
