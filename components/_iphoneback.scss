@@ -1,0 +1,292 @@
+.iphone-back{
+    @include displayFlex(column,center,center);
+    position: absolute;
+    width: 338px;
+    height: 715px;
+    background: radial-gradient(ellipse at center, 
+    rgba(217,213,223,1) 0%,
+    rgba(168,165,184,1) 42%, 
+    rgba(138,135,159,1) 69%, 
+    rgba(75,73,86,1) 98%,
+    rgba(71,69,82,1) 100%);
+    border-radius: 60px;
+    box-shadow: inset 1px 0px 6px 1px rgba(0,0,0,1);
+    animation: iphoneIn 3s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    will-change: transform, opacity;
+    &__apple-logo {
+        position: absolute;
+        // border: 1px solid red;
+        z-index: 5;
+        height: 89px;
+        width: 77px;
+        background: url('http://monsterbranding.com.mx/images/apple-logo.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+    &__camara-1 {
+        @include displayFlex(column, center, center);
+        width: 62px;
+        height:62px;
+        border-radius: 50%;
+        background: linear-gradient(90deg,
+        rgba(255,255,255,.5) 0%, 
+        rgba(217,213,223,.5) 2%, 
+        rgba(184,180,196,1) 42%, 
+        rgba(138,135,159,1) 98%, 
+        rgba(138,135,159,1) 99%, 
+        rgba(255,255,255,.5) 100%); /* w3c */
+        z-index: 5;
+        position: absolute;
+        top: 30px;
+        left: 37px;
+        box-shadow: 6px 4px 5px 0px rgba(131,128,150,.9);
+        @include lenteCamara;
+    }
+    &__camara-2 {
+        @include displayFlex(column, center, center);
+        width: 62px;
+        height:62px;
+        border-radius: 50%;
+        background: linear-gradient(90deg,
+        rgba(255,255,255,.5) 0%, 
+        rgba(217,213,223,.5) 2%, 
+        rgba(184,180,196,1) 42%, 
+        rgba(138,135,159,1) 98%, 
+        rgba(138,135,159,1) 99%, 
+        rgba(255,255,255,.5) 100%); /* w3c */
+        z-index: 5;
+        position: absolute;
+        top: 100px;
+        left: 37px;
+        box-shadow: 6px 4px 5px 0px rgba(131,128,150,.9);
+        @include lenteCamara;
+    }
+    &__camara-front{
+        position: absolute;
+        top: 26px;
+        left: 26px;
+        width:130px;
+        height: 144px;
+        border-radius: 40px;
+        background: linear-gradient(90deg,
+        rgba(255,255,255,.5) 0%, 
+        rgba(217,213,223,.5) 2%, 
+        rgba(184,180,196,1) 42%, 
+        rgba(138,135,159,1) 98%, 
+        rgba(138,135,159,1) 99%, 
+        rgba(255,255,255,.5) 100%); /* w3c */
+        z-index: 4;
+        border: 1px solid rgba($color: #ffff, $alpha: .1);
+    }
+    &__camara-back {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        width:135px;
+        height: 149px;
+        border-radius: 40px;
+        background: linear-gradient(90deg,
+        rgba(255,255,255,.5) 0%, 
+        rgba(217,213,223,.5) 2%, 
+        rgba(184,180,196,1) 42%, 
+        rgba(138,135,159,1) 98%, 
+        rgba(138,135,159,1) 99%, 
+        rgba(255,255,255,.5) 100%); /* w3c */
+        z-index: 3;
+        border: 1px solid rgba($color: #ffff, $alpha: .1);
+    }
+    &__shine {
+        position: absolute;
+        background: linear-gradient(60deg,
+        rgba(255,255,255,0.09) 0%, 
+        rgba(255,255,255,0) 49%, 
+        rgba(255,255,255,0.09) 49%, 
+        rgba(255,255,255,0) 82%); /* w3c */
+        z-index: 2;
+        width: 322px;
+        height: 700px;
+        border-radius: 60px;
+        }
+    &__subsquare {
+        position: absolute;
+        width: 322px;
+        height: 700px;
+        background: linear-gradient(90deg,
+         rgba(255,255,255,1) 0%, 
+         rgba(217,213,223,1) 2%, 
+         rgba(184,180,196,1) 42%, 
+         rgba(138,135,159,1) 98%, 
+         rgba(138,135,159,1) 99%, 
+         rgba(255,255,255,1) 100%); /* w3c */
+        border-radius: 60px;
+        box-shadow: inset 1px 0px 6px -3px rgba(0,0,0,1);
+        z-index: 1; 
+        }
+        // border: 1px inset #cec5d6;
+    &__lines-down {
+        position: absolute;
+        width: 338px;
+        height: 10px;
+        background: linear-gradient(90deg, 
+        rgba(177,174,181,.2) 1%, 
+        rgba(222,222,222,.2) 2%, 
+        rgba(84, 69, 107, 0.2) 5%, 
+        rgba(209,205,218,.2) 42%, 
+        rgba(200,194,211,.2) 94%, 
+        rgba(212,212,212,.2) 98%, 
+        rgba(138,135,159,.2) 100%); /* w3c */
+        bottom: -540px;
+        }
+    &__lines-up {
+        position: absolute;
+        width: 338px;
+        height: 10px;
+        background: linear-gradient(90deg, 
+        rgba(177,174,181,.2) 1%, 
+        rgba(222,222,222,.2) 2%, 
+        rgba(84, 69, 107, 0.2) 5%, 
+        rgba(209,205,218,.2) 42%, 
+        rgba(200,194,211,.2) 94%, 
+        rgba(212,212,212,.2) 98%, 
+        rgba(138,135,159,.2) 100%); /* w3c */
+        top: 80px;
+        }
+    &__sensor-1{
+        @include displayFlex(column, center, center);
+        position: absolute;
+        top:85px;
+        left: 115px;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: linear-gradient(90deg,
+        rgba(255,255,255,.2) 0%, 
+        rgba(217,213,223,.2) 2%, 
+        rgba(184,180,196,.5) 42%, 
+        rgba(138,135,159,.5) 98%, 
+        rgba(138,135,159,.5) 99%, 
+        rgba(255,255,255,.2) 100%); /* w3c */
+        z-index: 5;
+        
+        // border: 1px solid rgba($color: white, $alpha: .2);
+        box-shadow: 6px 4px 5px -5px rgba(131,128,150,.8);
+        &__light {
+            @include displayFlex(column, center, center);
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: linear-gradient(270deg, rgba(234,211,200,1) 0%, rgba(234,211,200,1) 25%, rgba(246,236,217,1) 47%, rgba(234,211,200,1) 68%, rgba(234,211,200,1) 100%); /* w3c */
+            box-shadow: inset 0px -1px 4px -1px rgba(0,0,0,.3);
+            border: 2px solid rgba($color: #948fa7, $alpha: .9);
+            @include littleShine;
+            }
+        }
+        &__sensor-2 {
+            @include displayFlex(column, center, center);
+            position: absolute;
+            top:55px;
+            left: 120px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: linear-gradient(90deg,
+            rgba(255,255,255,.2) 0%, 
+            rgba(217,213,223,.2) 2%, 
+            rgba(184,180,196,.5) 42%, 
+            rgba(138,135,159,.5) 98%, 
+            rgba(138,135,159,.5) 99%, 
+            rgba(255,255,255,.2) 100%); /* w3c */
+            z-index: 5;
+            box-shadow: 6px 4px 5px -5px rgba(131,128,150,.8);
+            .small-sensor {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #bfbac4;
+                border: 1px solid #969796;
+            }
+        }
+        
+    }
+    .botones-laterales__izq {
+        top: 180px;
+        left: -4px;
+        position: absolute;
+        width: 5px;
+        height: 82px;
+        border-radius: 3px;
+        background: radial-gradient(ellipse at center, 
+        rgba(217,213,223,1) 0%,
+        rgba(168,165,184,1) 42%, 
+        rgba(138,135,159,1) 69%, 
+        rgba(75,73,86,1) 98%,
+        rgba(71,69,82,1) 100%);
+        box-shadow: inset 1px 0px 6px 1px rgba(0,0,0,.7);
+        filter: blur(1px);
+        // z-index: 2;
+    }
+    .botones-laterales__der-1 {
+        top: 100px;
+        right: -3px;
+        position: absolute;
+        width: 4px;
+        height: 27px;
+        border-radius: 3px;
+        background: radial-gradient(ellipse at center, 
+        rgba(217,213,223,1) 0%,
+        rgba(168,165,184,1) 42%, 
+        rgba(138,135,159,1) 69%, 
+        rgba(75,73,86,1) 98%,
+        rgba(71,69,82,1) 100%);
+        box-shadow: inset 1px 0px 6px 1px rgba(0,0,0,.6);
+        filter: blur(1px);
+        // z-index: 2;
+    }
+    .botones-laterales__der-2 {
+        top: 150px;
+        right: -3px;
+        position: absolute;
+        width: 4px;
+        height: 50px;
+        border-radius: 3px;
+        background: radial-gradient(ellipse at center, 
+        rgba(217,213,223,1) 0%,
+        rgba(168,165,184,1) 42%, 
+        rgba(138,135,159,1) 69%, 
+        rgba(75,73,86,1) 98%,
+        rgba(71,69,82,1) 100%);
+        box-shadow: inset 1px 0px 6px 1px rgba(0,0,0,.5);
+        filter: blur(1px);
+        // z-index: 2;
+    }
+    .botones-laterales__der-3 {
+        top: 230px;
+        right: -3px;
+        position: absolute;
+        width: 4px;
+        height: 50px;
+        border-radius: 3px;
+        background: radial-gradient(ellipse at center, 
+        rgba(217,213,223,1) 0%,
+        rgba(168,165,184,1) 42%, 
+        rgba(138,135,159,1) 69%, 
+        rgba(75,73,86,1) 98%,
+        rgba(71,69,82,1) 100%);
+        box-shadow: inset 1px 0px 6px 1px rgba(0,0,0,.5);
+        // z-index: 2;
+        filter: blur(1px);
+    }
+
+    @keyframes iphoneIn {
+        0% {
+            transform: translateY(-300px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }

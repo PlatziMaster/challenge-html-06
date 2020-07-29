@@ -1,0 +1,89 @@
+@mixin displayFlex($direction, $justify, $align) {
+    display: flex;
+    flex-direction:$direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin lenteCamara {
+    &__shine {
+        position: absolute;
+        width: 52px;
+        height:52px;
+        border-radius: 50%;
+        background: linear-gradient(60deg,
+        rgba(255,255,255,0.1) 0%, 
+        rgba(255,255,255,0) 49%, 
+        rgba(255,255,255,0.1) 49%, 
+        rgba(255,255,255,0) 82%); /* w3c */
+        z-index: 7;
+    }
+    &__lente {
+        @include displayFlex(column, center , center);
+        width: 52px;
+        height:52px;
+        border-radius: 50%;
+        background: black;
+        z-index: 6;
+        border: 1px solid rgba($color: white, $alpha: .6);
+        .lente_shine{
+            @include displayFlex(column, center , center);
+            width: 22px;
+            height:22px;
+            border-radius: 50%;
+            background: linear-gradient(55deg, 
+            rgba(255,255,255,0) 0%, 
+            rgba(255,255,255,0) 52%, 
+            rgba(255,255,255,0.25) 53%, 
+            rgba(255,255,255,0.25) 61%); /* w3c */
+                .oculus{
+                width: 10px;
+                height:10px;
+                border-radius: 50%;
+                background: linear-gradient(270deg, 
+                rgba(12,87,166,1) 0%, 
+                rgba(21,26,36,1) 38%, 
+                rgba(0,0,0,1) 79%, 
+                rgba(12,87,166,1) 100%); /* w3c */
+                }
+        }
+    }
+}
+@mixin littleShine {
+    
+    .small-shine {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        width: 5px;
+        height: 5px;
+        background: white;
+        border-radius: 50%;
+        filter: blur(1px);
+    }
+}
+
+body {
+    @include displayFlex(column,center,center);
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(0deg, rgba(39,39,39,1) 0%, rgba(0,0,0,1) 43%, rgba(0,0,0,1) 68%, rgba(0,0,0,1) 89%); /* w3c */
+    width: 100%;
+    height: 100%;  
+}
+.container {
+    position: relative;
+    width: 338px;
+    height: 715px;
+}
+.container-back {
+    position: absolute;
+    width: 338px;
+    height: 715px;
+    z-index: 1;
+}
+.container-front {
+    position: absolute;
+    width: 338px;
+    height: 715px;
+    z-index: -1;
+}
