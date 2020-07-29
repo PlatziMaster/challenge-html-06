@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iphone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="container-back">
+            <div class="iphone-back" id="iphone">
+                <div class="botones-laterales__izq"></div>
+                <div class="botones-laterales__der-1"></div>
+                <div class="botones-laterales__der-2"></div>
+                <div class="botones-laterales__der-3"></div>
+                <div class="iphone-back__camara-1">
+                    <div class="iphone-back__camara-1__shine "></div> 
+                    <div class="iphone-back__camara-1__lente">
+                        <div class="lente_shine">
+                            <div class="oculus"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iphone-back__camara-2">
+                    <div class="iphone-back__camara-1__shine "></div> 
+                    <div class="iphone-back__camara-1__lente">
+                        <div class="lente_shine">
+                            <div class="oculus"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iphone-back__sensor-1">
+                    <div class="iphone-back__sensor-1__light">
+                        <div class="small-shine"></div>
+                    </div>
+                </div>
+                <div class="iphone-back__sensor-2">
+                    <div class="small-sensor"></div>
+                </div>
+                <div class="iphone-back__apple-logo"></div>
+                <div class="iphone-back__camara-front"></div>
+                <div class="iphone-back__camara-back"></div>
+                <div class="iphone-back__shine"></div>
+                <div class="iphone-back__subsquare"></div>
+                <div class="iphone-back__lines-up">
+                <div class="iphone-back__lines-down"></div>
+            </div>
+            </div>
+        </div>
+        <div class="container-front">
+            <div class="iphone-front" id="iphonefrente">
+                <div class="botones-laterales__der-frente"></div>
+                <div class="botones-laterales__izq-1-frente"></div>
+                <div class="botones-laterales__izq-2-frente"></div>
+                <div class="botones-laterales__izq-3-frente"></div>
+                <div class="iphone-front__subsquare-front">
+                    <div class="iphone-front__subsquare-front__screen">
+                        <div class="notch">
+                            <div class="light-front"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+    </div>
+     <script>
+         const iphone = document.getElementById('iphone')
+         const iphoneFrente = document.getElementById('iphonefrente')
+
+         iphone.addEventListener('animationend', (event) => {
+            iphoneFrente.classList.add('animationfront')
+         })
+     </script>
+</body>
+</html>
