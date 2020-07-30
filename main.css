@@ -124,6 +124,7 @@ body {
   height: 485px;
   border: solid 2px rgba(136, 133, 158, 0.603);
   border-radius: 40px;
-  background-image: url(/logo/fondo.jpg);
+  background-color: black;
+  background-image: url("/logo/fondo.jpg");
   background-size: cover;
 }
