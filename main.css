@@ -1,0 +1,130 @@
+body {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container {
+  position: relative;
+  display: block;
+}
+
+.phone-front, .phone-back {
+  width: 250px;
+  border-radius: 40px;
+}
+
+.phone-back {
+  position: absolute;
+  border: solid 3px rgba(146, 144, 164, 0.603);
+  height: 498px;
+  background: rgb(200,194,212);
+  background: radial-gradient(circle, rgba(200,194,212,1) 11%, rgba(255,249,249,1) 95%);
+}
+
+.container-camera {
+  position: relative;
+  height: 80px;
+  width: 70px;
+  border: solid 2px #cac4d8;
+  border-radius: 25px;
+  left: 5px;
+  top: 15px;
+}
+
+.camera-up, .camera-down {
+  width: 31px;
+  height: 31px;
+  border: solid 2px #867f98;
+  border-radius: 50px;
+  position: relative;
+  left: 3px;
+  top: 2px;
+}
+
+.parpadeante {
+  border-radius: 50px;
+  border: solid 3px #a3a1a4;
+  position: absolute;
+  width: 0.5px;
+  height: 0.5px;
+  left: 48px;
+  top: 15px;
+  background-color: #9a9a9b;
+}
+
+.flash {
+  border-radius: 50px;
+  border: solid 3px #c1b8cb;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 43.5px;
+  top: 33px;
+  background-color: #efe4d0;
+}
+
+.camera-down {
+  top: 9px;
+}
+
+.lente-up, .lente-down {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-color: #13171f;
+  border-radius: 50px;
+  top: 2px;
+  left: 2px;
+}
+
+.lente_center-up, .lente_center-down {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: #32477d;
+  border-radius: 50px;
+  top: 8px;
+  left: 7px;
+}
+
+.tapa {
+  position: absolute;
+  width: 236px;
+  height: 490px;
+  top: 4px;
+  left: 6px;
+  height: auto - 2px;
+  border-radius: 40px;
+  background: rgb(200,194,212);
+  background: linear-gradient(0deg, rgba(200,194,212,1) 0%, rgba(222,219,226,1) 100%);
+}
+
+.tapa_logo {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 130px;
+  left: 95px;
+}
+
+.phone-front {
+  position: absolute;
+  left: 120px;
+  height: 495px;
+  border: solid 4px rgba(136, 133, 158, 0.603);
+  border-radius: 40px;
+  background-color: #a9a3bb;
+}
+
+.phone_fondo {
+  position: relative;
+  top: 2px;
+  right: 2px;
+  height: 485px;
+  border: solid 2px rgba(136, 133, 158, 0.603);
+  border-radius: 40px;
+  background-color: black;
+  background-image: url("https://www.tuexpertomovil.com/wp-content/uploads/2020/02/notch-07-1200x2601.jpg");
+  background-size: cover;
+}
