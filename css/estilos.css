@@ -1,0 +1,45 @@
+
+.carcasa{
+    width: 200px;
+    height: 400px;
+    background-color:#9FAFA8;
+    border: 0.5px solid black;
+    border-radius: 30px;
+    position: relative;
+   /* z-index: 2;
+    left: 40%;
+    top: 100px;*/
+}
+
+.contenedor{
+    width: 180px;
+    height: 380px;
+    background-color:#667067 ;
+    border: 0.5px solid black;
+    box-shadow: -1px 2px 7px 0px rgba(0,0,0,1);
+    border-radius: 20px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    
+}
+
+.contenedorcam{
+    width: 70px;
+    height: 70px;
+    background-color: #9BA698;
+    border-radius: 15px;
+    box-shadow: -1px 2px 7px 0px rgba(0,0,0,1);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
