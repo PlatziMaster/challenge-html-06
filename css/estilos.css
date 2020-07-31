@@ -37,9 +37,105 @@
     height: 70px;
     background-color: #9BA698;
     border-radius: 15px;
-    box-shadow: -1px 2px 7px 0px rgba(0,0,0,1);
+    box-shadow: 2px -2px 5px 0px rgba(0,0,0,1);
     position: absolute;
     left: 10px;
     top: 10px;
 }
 
+.bordecam1{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color:#FCFEFB;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+
+}
+.cam1 img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    left: 2.49px;
+    top: 2.45px;
+
+}
+.bordecam2{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color:#FCFEFB;
+    position: absolute;
+    left: 2px;
+    top: 37px;
+
+}
+.cam2 img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    left: 2.49px;
+    top: 2.45px;
+
+}
+.bordecam3{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color:#FCFEFB;
+    position: absolute;
+    left: 37px;
+    top: 19.5px;
+
+}
+.cam3 img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    left: 2.49px;
+    top: 2.45px;
+
+}
+.flash{
+    width: 12px;
+    height: 12px;
+    background-color:#F6EFDC ;
+    border-radius: 50%;
+    position: absolute;
+    left: 47px;
+    top: 4px;
+}
+.sensor{
+    width: 6px;
+    height: 6px;
+    background-color:#3D4039 ;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: 56px;
+}
+.carcasaf{
+    width: 200px;
+    height: 400px;
+    background-color:#9FAFA8;
+    border: 0.5px solid black;
+    border-radius: 30px;
+    position: absolute;
+    left: 100px;
+}
+
+.contenedorf img{
+    width: 180px;
+    height: 380px;
+    background-size: cover;
+    border: 1px solid black;
+    box-shadow: 2px -2px 2px 0px rgba(0,0,0,1);
+    border-radius: 20px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
