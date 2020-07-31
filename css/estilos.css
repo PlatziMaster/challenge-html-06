@@ -1,20 +1,22 @@
 
+body{
+    margin-top: 100px;
+}
 .carcasa{
     width: 200px;
     height: 400px;
-    background-color:#9FAFA8;
+    background-color:#999999;
     border: 0.5px solid black;
     border-radius: 30px;
     position: relative;
-   /* z-index: 2;
     left: 40%;
-    top: 100px;*/
+  
 }
 
 .contenedor{
     width: 180px;
     height: 380px;
-    background-color:#667067 ;
+    background-color:#8d8d8d ;
     border: 0.5px solid black;
     box-shadow: -1px 2px 7px 0px rgba(0,0,0,1);
     border-radius: 20px;
@@ -28,14 +30,13 @@
     height: 45px;
     position: absolute;
     left: 35%;
-    top: 35%;
-    
+    top: 35%;   
 }
 
 .contenedorcam{
     width: 70px;
     height: 70px;
-    background-color: #9BA698;
+    background-color: #b0b1b0;
     border-radius: 15px;
     box-shadow: 2px -2px 5px 0px rgba(0,0,0,1);
     position: absolute;
@@ -51,7 +52,6 @@
     position: absolute;
     left: 3px;
     top: 3px;
-
 }
 .cam1 img {
     width: 25px;
@@ -60,7 +60,6 @@
     position: absolute;
     left: 2.49px;
     top: 2.45px;
-
 }
 .bordecam2{
     border-radius: 50%;
@@ -70,7 +69,6 @@
     position: absolute;
     left: 2px;
     top: 37px;
-
 }
 .cam2 img {
     width: 25px;
@@ -79,7 +77,6 @@
     position: absolute;
     left: 2.49px;
     top: 2.45px;
-
 }
 .bordecam3{
     border-radius: 50%;
@@ -89,7 +86,6 @@
     position: absolute;
     left: 37px;
     top: 19.5px;
-
 }
 .cam3 img {
     width: 25px;
@@ -98,12 +94,11 @@
     position: absolute;
     left: 2.49px;
     top: 2.45px;
-
 }
 .flash{
     width: 12px;
     height: 12px;
-    background-color:#F6EFDC ;
+    background-color:#f5da8e ;
     border-radius: 50%;
     position: absolute;
     left: 47px;
@@ -112,7 +107,7 @@
 .sensor{
     width: 6px;
     height: 6px;
-    background-color:#3D4039 ;
+    background-color:#e7e7e6 ;
     border-radius: 50%;
     position: absolute;
     left: 50px;
@@ -121,7 +116,7 @@
 .carcasaf{
     width: 200px;
     height: 400px;
-    background-color:#9FAFA8;
+    background-color:#b1b4b3;
     border: 0.5px solid black;
     border-radius: 30px;
     position: absolute;
