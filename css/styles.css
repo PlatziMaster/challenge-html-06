@@ -1,0 +1,68 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.iphone{
+   
+    /* opacity: 0.7; */
+    border-radius: 20px;
+    width: 282px;
+    height: 570px;    
+    background-color: rgb(31,32,32);
+    position: relative;
+    left: 30%   ;
+    top: 100px;    
+    border: 10px solid black;
+    
+}
+
+.camara{     
+    border-radius: 20px;
+    width: 70px;
+    height: 90px;
+    background-color: rgb(31,32,32);
+    position: relative;
+    left: 5%   ;
+    top: 25px;
+    z-index: 2;
+    border: 6px solid black;    
+}
+.logo img{    
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 250px;
+    left: 110px;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.lente1 img{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.lente2 img{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 50px;
+    position: absolute;
+    left: 5px;
+  
+}
+
+.light img {
+    width: 30px;
+    height: 30px;
+    background-color: cornsilk;
+    border-radius: 15px;
+    /* border: 3px solid rgb(255, 166, 0); */
+    position: absolute;
+    top: 30px;
+    left: 34px;
+}
